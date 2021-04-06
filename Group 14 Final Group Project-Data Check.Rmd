@@ -1,0 +1,26 @@
+---
+title: "Group 14 Group Project Data Check"
+author: "Jingyu Wang and Ziheng Yuan"
+date: "04.07.2021"
+output: html_notebook
+---
+
+### One sentence description of the topic you plan to investigate
+  + Our team hopes to use this data set of the COVID-19 in India to view and explore its spread rate and extent of spread in India.
+  
+### One or two sentences describing where you found the data
+  + We found our dataset at Kaggle page: Covid-19 in India, there is the url of where we found the data: https://www.kaggle.com/sudalairajkumar/covid19-in-india
+
+## Set Up:
+```{r}
+rm(list = ls())     # clean up R environment
+
+# load packages
+library(tidyverse)  # includes lots of data verbs like `group_by()` and `summarise()`
+library(dplyr)
+
+
+data(covid_19_india.csv)
+
+```
+
