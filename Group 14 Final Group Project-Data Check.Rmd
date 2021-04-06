@@ -19,8 +19,20 @@ rm(list = ls())     # clean up R environment
 library(tidyverse)  # includes lots of data verbs like `group_by()` and `summarise()`
 library(dplyr)
 
-
-data(covid_19_india.csv)
-
+ProjcData <- read.csv("covid_19_india.csv")
 ```
 
+```{r}
+glimpse(ProjcData)
+```
+
+```{r}
+head(ProjcData)
+```
+```{r}
+tail(ProjcData)
+```
+
+```{r}
+summary(ProjcData)
+```
